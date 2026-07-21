@@ -47,3 +47,8 @@ curl -X POST http://localhost:8787/api/sites \
 
 After deployment, add a custom domain in Cloudflare Workers routes or custom domains. Set `PUBLIC_BASE_URL` if the Worker needs to return that domain instead of the request origin.
 
+## End-to-End Testing
+
+After setup, follow the full deployment and verification runbook:
+
+[End-to-End Cloudflare Testing](E2E_CLOUDFLARE_TESTING.md)

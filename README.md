@@ -101,4 +101,5 @@ Response:
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Cloudflare Setup](docs/SETUP_CLOUDFLARE.md)
+- [End-to-End Cloudflare Testing](docs/E2E_CLOUDFLARE_TESTING.md)
 - [Codex Plugin Setup](docs/CODEX_PLUGIN.md)
