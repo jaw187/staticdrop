@@ -1,0 +1,12 @@
+name = "staticdrop"
+main = "src/index.ts"
+compatibility_date = "2026-07-21"
+
+[[r2_buckets]]
+binding = "SITES"
+bucket_name = "staticdrop-sites"
+
+[vars]
+# Override this when serving through a custom domain.
+PUBLIC_BASE_URL = ""
+

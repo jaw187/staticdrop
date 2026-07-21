@@ -1,0 +1,40 @@
+{
+  "name": "staticdrop",
+  "version": "0.1.0",
+  "description": "Publish generated static HTML folders to a tiny public pastebin-style host.",
+  "author": {
+    "name": "StaticDrop contributors"
+  },
+  "homepage": "https://github.com/example/staticdrop",
+  "repository": "https://github.com/example/staticdrop",
+  "license": "MIT",
+  "keywords": [
+    "static-sites",
+    "hosting",
+    "html",
+    "mcp",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "StaticDrop",
+    "shortDescription": "Publish generated static HTML and get a URL.",
+    "longDescription": "StaticDrop lets Codex publish a local static HTML directory to a small Cloudflare Worker backed by R2, returning a public URL for quick previews and sharing.",
+    "developerName": "StaticDrop contributors",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/example/staticdrop",
+    "privacyPolicyURL": "https://github.com/example/staticdrop",
+    "termsOfServiceURL": "https://github.com/example/staticdrop",
+    "defaultPrompt": [
+      "Publish this generated static site with StaticDrop.",
+      "Host the HTML in this folder and give me the URL."
+    ],
+    "brandColor": "#116466"
+  }
+}
+

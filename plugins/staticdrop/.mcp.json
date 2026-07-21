@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "staticdrop": {
+      "command": "node",
+      "args": [
+        "../packages/mcp/dist/index.js"
+      ],
+      "env": {
+        "STATICDROP_ENDPOINT": "${STATICDROP_ENDPOINT}",
+        "STATICDROP_TOKEN": "${STATICDROP_TOKEN}"
+      }
+    }
+  }
+}
+

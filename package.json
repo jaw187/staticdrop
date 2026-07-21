@@ -1,0 +1,15 @@
+{
+  "name": "staticdrop",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Pastebin-style static HTML hosting for Codex.",
+  "scripts": {
+    "test": "npm --prefix packages/mcp test"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "overrides": {
+    "@hono/node-server": "2.0.5"
+  }
+}
