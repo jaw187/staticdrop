@@ -156,6 +156,16 @@ curl -fsS "$STATICDROP_ENDPOINT/s/e2e-mcp/" | grep "StaticDrop works"
 curl -fsS "$STATICDROP_ENDPOINT/s/e2e-mcp/styles.css" | grep "font-family"
 ```
 
+You can also run the automated Cloudflare integration test:
+
+```bash
+STATICDROP_ENDPOINT="$STATICDROP_ENDPOINT" \
+STATICDROP_TOKEN="$STATICDROP_TOKEN" \
+npm --prefix packages/mcp run test:e2e:cloudflare
+```
+
+This test creates a temporary two-file static site, uploads it through the MCP publisher, fetches the hosted HTML and CSS through the Worker, and verifies unauthorized uploads are rejected.
+
 ## 8. Test Through Codex
 
 Make sure the local plugin has access to the same environment variables:
@@ -224,4 +234,3 @@ npx wrangler r2 bucket delete staticdrop-sites
 ```
 
 Do not delete the bucket if it contains real shared previews.
-

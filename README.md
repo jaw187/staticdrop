@@ -48,6 +48,14 @@ export STATICDROP_TOKEN="same-token-as-upload-token"
 node dist/index.js
 ```
 
+Run the optional deployed Cloudflare integration test:
+
+```bash
+export STATICDROP_ENDPOINT="https://your-worker.workers.dev"
+export STATICDROP_TOKEN="same-token-as-upload-token"
+npm --prefix packages/mcp run test:e2e:cloudflare
+```
+
 Install the Codex plugin by pointing Codex at `plugins/staticdrop/`, then ask:
 
 ```text
